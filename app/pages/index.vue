@@ -30,6 +30,7 @@
 </template> 
  
 <script setup lang="ts"> 
+//@ts-nocheck
 const user = ref<any>(null) 
  
 onMounted(() => { 

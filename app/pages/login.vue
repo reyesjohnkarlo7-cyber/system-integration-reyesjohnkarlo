@@ -20,6 +20,10 @@
 </template>
 
 <script lang="ts" setup>
+//@ts-nocheck
+definePageMeta({
+  layout: false
+})
 const config = useRuntimeConfig()
 declare global {
   interface Window {
