@@ -11,9 +11,9 @@
           <v-divider></v-divider>
 
           <v-list density="compact" nav>
-            <v-list-item prepend-icon="mdi-folder" title="Dashboard" value="index"></v-list-item>
-            <v-list-item prepend-icon="mdi-qrcode" title="QR Code" value="shared"></v-list-item>
-            <v-list-item prepend-icon="mdi-weather-lightning-rainy" title="Weather" value="starred"></v-list-item>
+            <v-list-item prepend-icon="mdi-folder" title="Dashboard" to="/" value="index"></v-list-item>
+            <v-list-item prepend-icon="mdi-qrcode" title="QR Code" to="qr-scanner" value="shared"></v-list-item>
+            <v-list-item prepend-icon="mdi-weather-lightning-rainy" to="weather" title="Weather" value="starred"></v-list-item>
           </v-list>
         </v-navigation-drawer>
 
