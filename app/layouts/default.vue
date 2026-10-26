@@ -2,7 +2,7 @@
   <v-app>
     <v-main>
       <v-container>
-        <v-navigation-drawer expand-on-hover permanent rail>
+        <v-navigation-drawer v-model="drawer" expand-on-hover permanent @click="drawer =true">
           <v-list>
             <v-list-item prepend-avatar="https://randomuser.me/api/portraits/women/85.jpg"
               subtitle="sandra_a88@gmailcom" title="Sandra Adams"></v-list-item>
@@ -19,7 +19,7 @@
 
         <v-app-bar>
           <template v-slot:prepend>
-            <v-app-bar-nav-icon></v-app-bar-nav-icon>
+            <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
           </template>
 
           <v-app-bar-title>Application Bar</v-app-bar-title>
@@ -36,6 +36,10 @@
   </v-app>
 </template>
 
-<script lang="ts" setup>
-
+<script>
+export default {
+  data: () => ({
+    drawer: true,
+  })
+}
 </script>
